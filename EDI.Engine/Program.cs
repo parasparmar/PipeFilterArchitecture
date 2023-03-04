@@ -1,4 +1,5 @@
 ﻿using EDI;
+using EDI.Messages;
 
 //INPUT
 IMessage message = new Message(messageId: "1",

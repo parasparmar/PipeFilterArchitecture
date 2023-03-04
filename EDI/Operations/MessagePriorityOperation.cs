@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDI.Messages;
 
-namespace EDI
+namespace EDI.Operations
 {
     /// <summary>  
     /// Sets Message priority to the incoming message  
     /// </summary>  
-    public class MessagePriority : IOperation<IMessage>
+    public class MessagePriorityOperation : IOperation<IMessage>
     {
         /// <summary>  
         /// Executes the operations  

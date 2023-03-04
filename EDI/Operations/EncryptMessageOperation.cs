@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDI.Messages;
 
-namespace EDI
+namespace EDI.Operations
 {
     /// <summary>  
     /// Encrypts the message  
     /// </summary>
-    public class EncryptMessage : IOperation<IMessage>
+    public class EncryptMessageOperation : IOperation<IMessage>
     {
         /// <summary>  
         /// Executes the operation on the message  

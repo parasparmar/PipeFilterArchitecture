@@ -1,4 +1,4 @@
-﻿namespace EDI
+﻿namespace EDI.Messages
 {
     /// <summary>  
     /// Message class  
@@ -83,7 +83,7 @@
         /// <returns>The value true/falses</returns>  
         public bool IsMessagePrioritySet()
         {
-            return (Priority != 0);
+            return Priority != 0;
         }
 
 

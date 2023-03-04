@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EDI
+namespace EDI.Inputs
 {
     public interface IInputAdapter
     {

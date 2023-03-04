@@ -1,5 +1,6 @@
 using System.Windows.Forms;
-using EDI;
+using EDI.Messages;
+
 namespace EDI.Desktop
 {
     public partial class Pipeline : Form
@@ -19,7 +20,7 @@ namespace EDI.Desktop
             tbLogs.Clear();
             string Message = string.Empty;
             //INPUT
-            IMessage message = new Message(
+            IMessage message = new Messages.Message(
                 messageId: "1",
                 body: "This is the message body",
                 header: "Header Information",
@@ -31,7 +32,7 @@ namespace EDI.Desktop
             Message = $"Message Priority : {publishedMessage.IsMessagePrioritySet()} Message Encryption : {publishedMessage.IsMessageEncrypted()}";
             tbLogs.Text = Message;
 
-            
+
         }
     }
 }

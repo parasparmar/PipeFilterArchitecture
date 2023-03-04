@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDI.Messages;
+using EDI.Operations;
 
 namespace EDI
 {
@@ -22,12 +24,12 @@ namespace EDI
         {
             if (setPriority)
             {
-                Register(new MessagePriority());
+                Register(new MessagePriorityOperation());
             }
 
             if (encryptMessage)
             {
-                Register(new EncryptMessage());
+                Register(new EncryptMessageOperation());
             }
         }
     }

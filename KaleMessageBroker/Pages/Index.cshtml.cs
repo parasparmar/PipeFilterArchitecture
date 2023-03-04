@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using EDI;
+using EDI.Messages;
+
 namespace KaleMessageBroker.Pages
 {
     public class IndexModel : PageModel

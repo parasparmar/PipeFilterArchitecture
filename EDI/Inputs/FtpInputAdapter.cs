@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDI.Messages;
 
-namespace EDI
+namespace EDI.Inputs
 {
-    public class FtpInputAdapter: IInputAdapter
+    public class FtpInputAdapter : IInputAdapter
     {
         public string FilePath { get; set; }
         public string UserId { get; set; }
