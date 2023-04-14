@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EDI.Messages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace EDI.Inputs
 {
     public interface IInputAdapter
     {
-
+        List<IMessage> GetInputs(string FilePath);
     }
 }

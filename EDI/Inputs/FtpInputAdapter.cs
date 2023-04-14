@@ -13,7 +13,7 @@ namespace EDI.Inputs
         public string UserId { get; set; }
         public string Password { get; set; }
 
-        public List<IMessage> GetInputFiles(string FilePath)
+        public List<IMessage> GetInputs(string FilePath)
         {
             var files = new List<string>();
             // Find all files at the above path and then convert them to C# object of Interface IMessage
